@@ -1,0 +1,7 @@
+<h2>Home</h2>
+
+<a href="/add">Add Gun</a>
+
+<ul>
+  <li ng-repeat="g in vm.guns"> {{g.manufacturer}} | {{g.model}} <a href="/edit/{{g._id}}">Edit</a> <a ng-click="vm.deleteGun(g._id)">Delete</a> </li>
+</ul>
